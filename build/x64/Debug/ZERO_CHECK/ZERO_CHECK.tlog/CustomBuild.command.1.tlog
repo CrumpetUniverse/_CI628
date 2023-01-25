@@ -1,0 +1,10 @@
+^C:\USERS\CONNO\ONEDRIVE\DOCUMENTS\CASEY\MGD\CI628\BUILD\CMAKEFILES\D0082EA1AED4C01F7C2BDEE532F00C55\GENERATE.STAMP.RULE
+setlocal
+C:\Users\conno\OneDrive\Documents\CASEY\CMakeP\bin\cmake.exe -SC:/Users/conno/OneDrive/Documents/CASEY/MGD/CI628 -BC:/Users/conno/OneDrive/Documents/CASEY/MGD/CI628/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/conno/OneDrive/Documents/CASEY/MGD/CI628/build/MyGame.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
